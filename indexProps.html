@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilosProps.css">
+    <link rel="shortcut icon" href="icono.png">
+    <title>Prop Validation</title>
+</head>
+<body>
+    <header>
+        <h1>Validación de Props</h1>
+    </header>
+    <section id="section-main">
+        <candidato v-for="candidato in candidatos"
+            :nombre="candidato.name.first"
+            :correo="candidato.email"
+            :imagen="candidato.picture.thumbnail"
+            :location="candidato.location">
+        </candidato>
+    </section>
+    <template id="candidato-template">
+        <blockquote>
+            <img :src="imagen" align="right">
+            <h1>{{nombre}}</h1>
+            <h1>{{correo}}</h1>
+            <ul>
+                <li v-for="(value,key,index) in location">
+                    {{value}}
+                </li>
+            </ul>
+            <hr>
+        </blockquote>
+    </template>
+    <footer>
+        <h1>@Aldo Gutiérrez</h1>
+    </footer>
+    <script src="vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="appProps.js"></script>
+</body>
+</html>

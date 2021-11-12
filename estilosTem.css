@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header,footer{
+    background-color: rgb(240, 170, 64);
+    text-align: center;
+}
+
+section{
+    width: 80%;
+    margin: 3% 10%;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    border:none;
+    padding: 10px 15px;
+    background-color: rgb(75, 138, 247);
+    cursor: pointer;
+    margin-top: 10%;
+}
+
+button:hover{
+    background-color: rgb(45, 119, 247);
+}

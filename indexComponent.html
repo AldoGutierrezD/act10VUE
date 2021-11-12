@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilosComponent.css">
+    <link rel="shortcut icon" href="icono.png">
+    <title>Components</title>
+</head>
+<body>
+    <header>
+        <h1>Componentes</h1>
+    </header>
+    <section id="section-main">
+        <!-- <ul>
+            <li v-for="tarea in tareasAjax" v-text="tarea.title"></li>
+        </ul> -->
+        <h2>Tareas Locales</h2>
+        <mis-tareas :tareas="tareasLocales"></mis-tareas>
+        <h2>Tareas independientes</h2>
+        <tareas-gral></tareas-gral>
+        <h2>Tareas AJAX</h2>
+        <mis-tareas :tareas="tareasAjax"></mis-tareas>
+    </section>
+    <footer>
+        <h1>@Aldo Gutiérrez</h1>
+    </footer>
+    <script src="vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.3"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="appComponent.js"></script>
+</body>
+</html>

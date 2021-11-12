@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: 2px solid rgb(243, 185, 78);
+    width: 80%;
+    height: auto;
+    margin-left: 7.5%;
+    padding: 2.5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+button, .minus{
+    background-color: dodgerblue;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(11, 101, 192);
+}
+
+.minus{
+    background-color: rgb(230, 107, 91);
+}
+
+header,footer{
+    background-color: rgb(236, 177, 104);
+}
+
+.minus:hover{
+    background-color: rgb(226, 69, 48);
+}
+
+header>h1, footer>h1{
+    text-align: center;
+}
